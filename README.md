@@ -10,10 +10,12 @@
 
 	Java Specifications:
 
-	The Java programs submitted must be in a single source code (not .class) file. Nevertheless, you can add as many classes as you need in this file. All the classes in this file must not be within any package.
+	The Java programs submitted must be in a single source code (not .class) file.
+	Nevertheless, you can add as many classes as you need in this file.
+	All the classes in this file must not be within any package.
 
-	All programs must begin in a static main method in a Main class.
+	* All programs must begin in a static main method in a Main class.
 
-	Do not use public classes: even Main must be non public to avoid compile error.
+	* Do not use public classes: even Main must be non public to avoid compile error.
 
-	 Use buffered I/O to avoid time limit exceeded due to excesive flushing.
+	* Use buffered I/O to avoid time limit exceeded due to excesive flushing.
