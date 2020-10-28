@@ -19,3 +19,19 @@
 	* Do not use public classes: even Main must be non public to avoid compile error.
 
 	* Use buffered I/O to avoid time limit exceeded due to excesive flushing.
+
+
+### LocalDate
+    LocalDate date = LocalDate.of(2020, Month.OCTOBER, 28);
+    System.out.println(date.getDayOfWeek());    
+
+### Collections
+	it help to insert an array to any data structure in collection format
+
+        Integer a[] = {99,1, 2, 3, 4, 5, 6, 1 , 2, 4, 8};
+
+        SortedSet<Integer> sortedSet = new TreeSet<>();
+        Collections.addAll(sortedSet, a);
+
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        Collections.addAll(arrayList, a);
