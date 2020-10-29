@@ -35,3 +35,48 @@
 
         ArrayList<Integer> arrayList = new ArrayList<>();
         Collections.addAll(arrayList, a);
+
+### compareTo
+	
+	java dont support operator overloading
+	so if we want to sort class like Arrays.sort(class[])
+	we need to custom define our own compareTo method
+
+	if obj1.compareTo(obj2) < 0
+		obj1 is less than obj2
+
+	if obj1.compareTo(obj2) > 0
+		obj1 is greater than obj2
+
+	if obj1.compareTo(obj2) == 0
+		both are identical
+
+### recursive permute
+    static void recursive_permute(char[] arr, int l, int r)
+    {
+        if (l==r)
+        {
+            for (char c: arr)
+                System.out.print(c + " ");
+
+            System.out.println();
+        }
+
+
+        else
+        {
+            for (int i = l; i <= r; i++) {
+                char temp;
+                // swap(arr , l, i)
+                temp = arr[i];
+                arr[i] = arr[l];
+                arr[l] = temp;
+                recursive_permute(arr, l+1, r);
+                // swap back to normal
+                temp = arr[i];
+                arr[i] = arr[l];
+                arr[l] = temp;
+            }
+        }
+
+    }
