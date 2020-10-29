@@ -80,3 +80,10 @@
         }
 
     }
+
+
+
+### formula
+    
+    each character of a string
+    s1.charAt(i)
